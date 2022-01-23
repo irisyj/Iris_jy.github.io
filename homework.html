@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="homework.css">
+		<script type="text/javascript" src="homework.js"></script>
+	</head>
+	<body>
+		<div class="blur">
+			<header>
+				<div class="header-f">
+					<div class="logo"><img src="src/logo.png" height="25px" align="absmiddle"></div>
+					<div class="nav">
+						<ul>
+							<li><a href="#">开发文档</a></li>
+							<li><a href="#">交流中心</a></li>
+							<li><a href="#">服务市场</a></li>
+							<li><a href="#">开源联盟</a></li>
+							<div class="manager"><a href="#">管理中心</a></div>
+						</ul>
+					</div>
+				</div>
+				<div class="info">百度前端训练营2021开营了，赶紧报名吧！</div>
+		</div>
+		</header>
+		</div>
+		<div class="login" align="center">
+			<div id="login_inner" style="display: none;">
+				<div class="word" id="word" align="center">您已完成报名，开始你的学习之旅吧！</div>
+				<div id="return"><a href="javascript:void(0);" onclick="get_return()">重新报名</a></div>
+			</div>
+			<div class="login_inner" id="login" align="center" >
+				<div class="pop">
+					<div class="school">选择您的学校<br /><input id="input_school" name="school" placeholder="选择您的学校"
+							onmousemove="get_school_list()" />
+						<div id="school-pop" onmouseleave="lose_list()">
+							<ul id="choose_school" style="display:none;">
+								<li><a href="#">省市1</a>
+									<ul class="ul_ul">
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市1XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市2XXXXX大学')">XXXXX大学</a></li>
+									</ul>
+								</li>
+								<li><a href="#">省市2</a>
+									<ul class="ul_ul">
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市2XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市2XXXXX大学')">XXXXX大学</a></li>
+									</ul>
+								</li>
+								<li><a href="#">省市3</a>
+									<ul class="ul_ul">
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市3XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市3XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市3XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市3XXXXX大学')">XXXXX大学</a></li>
+									</ul>
+								</li>
+								<li><a href="#">省市4</a>
+									<ul class="ul_ul">
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市4XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市4XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市4XXXXX大学')">XXXXX大学</a></li>
+									</ul>
+								</li>
+								<li><a href="#">省市5</a>
+									<ul class="ul_ul">
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市5XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市5XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市5XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市5XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市5XXXXX大学')">XXXXX大学</a></li>
+									</ul>
+								</li>
+								<li><a href="#">省市6</a>
+									<ul class="ul_ul">
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市6XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市6XXXXX大学')">XXXXX大学</a></li>
+										<li><a href="javascript:void(0);"
+												onclick="inner_school('省市6XXXXX大学')">XXXXX大学</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="pop" onmouseleave="lose_table()">
+					<div class="year">选择您的入学年份<br /><input id="input_year" name="year" placeholder="选择您的入学年份"
+							onmousemove="get_table()" /><br />
+						<div class="year_pop">
+							<table class="year_table" id="year-table" style="display:none;">
+								<tr>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2011)">2011</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2012)">2012</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2013)">2013</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2014)">2014</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2015)">2015</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2016)">2016</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2017)">2017</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2018)">2018</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2019)">2019</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2020)">2020</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2021)">2021</a>
+									</td>
+									<td><a href="javascript:void(0);" class="year_a" onclick="inner_text(2022)">2022</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="mail">输入您的电子邮箱<br /><input type="text" id="mail" placeholder="输入您的电子邮箱" /></div>
+				<div class="sub"><button type="button" onclick="email()">报名</button></div>
+			</div>
+			<div class="warning" id="warning" align="center" style="display: none;">邮箱地址或学校输入不符合要求，请重新输入</div>
+			<div class="correct" id="correct" align="center" style="display: none;">恭喜您，您的报名信息已记录，请关注您的邮件</div>
+		</div>
+		<div class="content">
+			<p>我们的宗旨</p>
+			<div class="con1">
+				<ul class="content_ul">
+					<div>
+						<li>自律独立思考</li>
+						<img src="src/img1.jpg">
+					</div>
+					<div>
+						<li>实践</li>
+						<img src="src/img2.jpg">
+					</div>
+					<div>
+						<li>总结回顾</li>
+						<img src="src/img3.jpg">
+					</div>
+					<div>
+						<li>分享交流</li>
+						<img src="src/img4.jpg">
+					</div>
+				</ul>
+			</div>
+			<div class="con2">
+				<p align="center">课程安排</p>
+				<div class="nav-box">
+					<ul class="nav_ul">
+						<li class="nav_li" id="All"><a href="javascript:void(0);" style="color:gray;"
+								onclick="choose_All()">全部</a></li>
+						<li class="nav_li" id="HTML_"><a href="javascript:void(0);" style="color:gray;"
+								onclick="choose_HTML()">HTML</a></li>
+						<li class="nav_li" id="CSS_"><a href="javascript:void(0);" style="color:gray;"
+								onclick="choose_CSS()">CSS</a></li>
+						<li class="nav_li" id="JS_"><a href="javascript:void(0);" style="color:gray;"
+								onclick="choose_JS()">JavaScript</a></li>
+					</ul>
+				</div>
+				<div class="content2">
+					<dl>
+						<div class="lesson">
+							<div class="lesson_img">
+								<img src="src/img5.jpg">
+							</div>
+							<div class="lesson_con">
+								<dt>第一课 这里是课程名字</dt>
+								<dd>这里是课程内容的概要</dd>
+								<div class="Type">
+									<div class="Type-HTML">HTML</div>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson_img">
+								<img src="src/img5.jpg">
+							</div>
+							<div class="lesson_con">
+								<dt>第二课 这里是课程名字</dt>
+								<dd>这里是课程内容的概要</dd>
+								<div class="Type">
+									<div class="Type-CSS">CSS</div>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson_img">
+								<img src="src/img5.jpg">
+							</div>
+							<div class="lesson_con">
+								<dt>第三课 这里是课程名字</dt>
+								<dd>这里是课程内容的概要</dd>
+								<div class="Type">
+									<div class="Type-JS">JavaScript</div>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson_img">
+								<img src="src/img5.jpg">
+							</div>
+							<div class="lesson_con">
+								<dt>第四课 这里是课程名字</dt>
+								<dd>这里是课程内容的概要</dd>
+								<div class="Type">
+									<div class="Type-HTML">HTML</div>
+									<div class="Type-CSS">CSS</div>
+									<div class="Type-JS">JavaScript</div>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson_img">
+								<img src="src/img5.jpg">
+							</div>
+							<div class="lesson_con">
+								<dt>第五课 这里是课程名字</dt>
+								<dd>这里是课程内容的概要</dd>
+								<div class="Type">
+									<div class="Type-HTML">HTML</div>
+									<div class="Type-JS">JavaScript</div>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson_img">
+								<img src="src/img5.jpg">
+							</div>
+							<div class="lesson_con">
+								<dt>第六课 这里是课程名字</dt>
+								<dd>这里是课程内容的概要</dd>
+								<div class="Type">
+									<div class="Type-CSS">CSS</div>
+									<div class="Type-JS">JavaScript</div>
+								</div>
+							</div>
+						</div>
+						<div class="lesson">
+							<div class="lesson_img">
+								<img src="src/img5.jpg">
+							</div>
+							<div class="lesson_con">
+								<dt>第七课 这里是课程名字</dt>
+								<dd>这里是课程内容的概要</dd>
+								<div class="Type">
+									<div class="Type-CSS">CSS</div>
+								</div>
+							</div>
+						</div>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="IFE">
+				<img src="src/I.jpg" width="60px" style="margin-left: 170px;">
+				<img src="src/F.jpg" width="60px">
+				<img src="src/E.jpg" width="60px">
+			</div>
+			<div class="column">
+				<div class="title"><strong>Links</strong></div>
+				<div class="content_footer">百度技术培训中心</div>
+				<div class="content_footer">百度技术</div>
+				<div class="content_footer">技术培训中心</div>
+				<div class="content_footer">百度技术培训中心</div>
+				<div class="content_footer">技术培训中心</div>
+			</div>
+			<div class="column">
+				<div class="title"><strong>Links</strong></div>
+				<div class="content_footer">百度技术培训中心</div>
+				<div class="content_footer">百度技术</div>
+				<div class="content_footer">技术培训中心</div>
+				<div class="content_footer">百度技术培训中心</div>
+				<div class="content_footer">技术培训中心</div>
+			</div>
+			<div class="column">
+				<div class="title"><strong>Links</strong></div>
+				<div class="content_footer">百度技术培训中心</div>
+				<div class="content_footer">百度技术</div>
+				<div class="content_footer">技术培训中心</div>
+				<div class="content_footer">百度技术培训中心</div>
+				<div class="content_footer">技术培训中心</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
